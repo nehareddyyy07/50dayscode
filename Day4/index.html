@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://www.google.com/search">
+        <label for="Biryani">Biryani</label>
+        <input type="checkbox" id="Biryani" name="q" value="Biryani" checked><br><br>
+        <label for="Manchuria">Manchuria</label>
+        <input type="checkbox" id="Manchuria" name="q" value="Manchuria"><br><br>
+        <label for="Noodles">Noodles</label>
+        <input type="checkbox" id="Noodles" name="q" value="Noodles"><br><br>
+        <button type="Submit">Submit</button><br><br>
+    </form>
+    <form action="/action"> 
+        <label for="Biryani">Biryani</label>
+        <input type="checkbox" id="Biryani" name="Biryani" value="Biryani"><br><br>
+        <label for="Manchuria">Manchuria</label>
+        <input type="checkbox" id="Manchuria" name="Manchuria" value="Manchuria"><br><br>
+        <label for="Noodles">Noodles</label>
+        <input type="checkbox" id="Noodles" name="Noodles" value="Noodles"><br><br>
+        <button type="Submit">Submit</button>
+    </form>
+    <form><!--name should be written same for both -->
+        <label for="Male">Male</label>
+        <input type="radio" id="Male" name="Gender"><br><br>
+        <label for="Female">Female</label>
+        <input type="radio" id="Female" name="Gender">
+    </form>
+    <form action="/action">
+        <input type="range" min="0" max="100" name="volume" step="10" value="45"><br><br><!--step used to roundoff whereas value attribute gives the absolute value specified-->
+        <button type="submit">Submit</button><br><br>
+    </form>
+    <form>
+        <select name="Branch" id="Branch">
+        <option value="Select your branch">Select your branch</option>
+        <option value="CSE">CSE</option>
+        <option value="CSM">CSM</option>
+        <option value="IT">IT</option>
+        </select>
+        <button type="Submit">Submit</button>
+    </form>
+    <audio controls autoplay muted loop>
+        <source src="swy.mp3">
+    </audio>
+    <audio controls>
+        <source src="love_story.mp3">
+    </audio>
+    <a href="https://github.com/nehareddyyy07">
+        <video src="sample_video.mp4" width="300px" autoplay muted loop>
+        </video>
+    </a>
+
+</body>
+</html>
