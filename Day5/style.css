@@ -1,0 +1,30 @@
+img{
+    display:block;
+    margin:auto;
+}
+h1{
+    color:rgb(rgb(197, 151, 151), rgb(101, 184, 101), rgb(78, 78, 184));
+}
+body{
+    background-color:beige;
+}
+p{
+    font-size:medium;
+    font-style:oblique;
+    font-family: 'Times New Roman';
+}
+table{
+    border-color:forestgreen;
+    border-radius: 3mm;
+    border-width:4mm;
+}
+td{
+    padding-left:2mm;
+}
+h2{
+    text-align:center;
+    text-decoration: underline;
+}
+.skills{
+    color:orchid;
+}
