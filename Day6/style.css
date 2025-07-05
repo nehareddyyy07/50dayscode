@@ -1,0 +1,38 @@
+h1{
+    color:crimson;
+    text-align:center;
+}
+body{
+    background-color:lavender;
+}
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    gap:20px;
+}
+.container figure{
+    margin:0;
+    flex:calc(45%-30px);
+    text-align:center;
+}
+.container img{
+    display:auto;
+    width:400px;
+    height:auto;
+    border-radius:10px;
+}
+.container h3{
+    color:darkgreen;
+    text-align:center;
+}
+.foot{
+    display:flex;
+    justify-content:center;
+    background-color:lightpink;
+    width:100%;
+    font-style:italic;
+    color:lemonchiffon;
+}
