@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <p id="demo">Welcome</p>
+    <p class="text">Hello everyone</p>
+    <p class="text">How are you?</p>
+    <p class="text">Hope you are doing fine!</p>
+    <h2>My name is Neha</h2>
+    <h2>I am studying in MREC</h2>
+    <form name="myForm">
+        <input type="text" name="username">
+    </form>
+    <script>
+        const para=document.getElementById("demo");
+        para.style.color="red";
+        const para1=document.getElementsByClassName("text");
+        for(let i=0;i<para1.length;i++){
+            para1[i].style.fontFamily="fantasy";
+            para1[i].style.color="blue";
+        }
+        let clickme=()=>{
+        const head1=document.getElementsByTagName("h2");
+        head1[0].innerHTML="I am Neha";
+        }
+        /*const head1=document.getElementsByTagName("h2");
+        head1[0].innerHTML="I am Neha";*/
+        const element1=document.querySelector("#demo");
+        element1.style.backgroundColor="lightgray";
+        const element2=document.querySelector(".text");
+        element2.style.color="green";
+        const ele1=document.querySelectorAll(".text");
+        for(let i=0;i<ele1.length;i++){
+        ele1[i].style.backgroundColor="pink";
+        }
+        document.body.style.backgroundColor="lightyellow";
+        const form=document.forms["myForm"];
+        form.username.value="xyz";
+    </script>
+    <button onclick='clickme()'>Click Me</button>
+</body>
+</html>

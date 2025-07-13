@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="intro">Document Object Model</h1>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dicta soluta ipsa quas nesciunt dolor eaque harum reprehenderit cupiditate. Nobis atque impedit quaerat adipisci porro repellat. Commodi earum optio blanditiis maxime voluptate magnam! Quae neque accusamus dolorem quisquam soluta delectus reprehenderit cumque officiis eum, suscipit voluptates, deserunt sunt asperiores explicabo.
+    </p>
+    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, aliquam velit cumque molestias rem ipsum.</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptate aut non asperiores itaque sequi dignissimos est sint iste reprehenderit ad quis explicabo velit cum assumenda suscipit eveniet esse dolor magni vero, temporibus debitis tenetur. Maiores magnam voluptatem eligendi odit alias autem.</p>
+    <button onclick="func()">Clickme</button>
+    <script>
+        let func=()=>{
+            const heading1=document.getElementById("intro");
+            heading1.innerHTML="DOM";
+            heading1.style.color="purple";
+            const paras=document.getElementsByClassName("text");
+            for(let i=0;i<paras.length;i++){
+                paras[i].style.fontFamily="fantasy";
+            }
+            const para1=document.getElementsByTagName("p");
+            para1[0].style.color="green";
+            const para=document.querySelector(".text");
+            para.style.fontSize="x-large";
+            const para2=document.querySelectorAll(".text");
+            for(let i=0;i<para2.length;i++){
+                para2[1].style.color="blue";
+                para2[2].style.color="teal";
+            }
+            document.body.style.backgroundColor="lightpink";
+        }
+    </script>
+</body>
+</html>
